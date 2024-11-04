@@ -1,5 +1,5 @@
 {
-  description = "Celebrating 30 years of IT HUSC";
+  description = "Landing page for 30th anniversary celebration of the IT department at Hue University of Science";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
