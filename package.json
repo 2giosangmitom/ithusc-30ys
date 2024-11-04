@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.1",
+    "@nuxt/fonts": "^0.10.2",
     "@nuxt/image": "^1.8.1",
-    "nuxt": "^3.13.2",
-    "vue": "latest",
-    "vue-router": "latest"
+    "@vueuse/motion": "^2.2.6",
+    "nuxt": "^3.14.0",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }
