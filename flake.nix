@@ -15,13 +15,12 @@
       in
       {
         devShells.default = pkgs.mkShellNoCC {
-          buildInputs =
-            with pkgs;
-            [
-              nodejs_22
-              pnpm
-              just
-            ];
+          buildInputs = with pkgs; [
+            bashInteractive
+            nodejs_22
+            pnpm
+            just
+          ];
           shellHook = ''
             export SHELL="${pkgs.bashInteractive}/bin/bash"
           '';
