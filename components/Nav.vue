@@ -61,7 +61,7 @@ const triggerIcon = computed(() =>
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  border: 1px solid var(--red);
+  border: 2px solid var(--red);
   cursor: pointer;
   font-size: 2rem;
   padding: 3px;
