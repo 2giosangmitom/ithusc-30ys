@@ -23,4 +23,6 @@ useHeadSafe({
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>

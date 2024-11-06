@@ -12,7 +12,6 @@
   "dependencies": {
     "@nuxt/eslint": "^0.6.1",
     "@nuxt/fonts": "^0.10.2",
-    "@nuxt/image": "^1.8.1",
     "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.14.0",
     "vue": "^3.5.12",

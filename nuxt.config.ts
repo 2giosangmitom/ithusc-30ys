@@ -3,10 +3,20 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: [
-    "@nuxt/image",
-    "@nuxt/eslint",
-    "@vueuse/motion/nuxt",
-    "@nuxt/fonts",
-  ],
+  modules: ["@nuxt/eslint", "@vueuse/motion/nuxt", "@nuxt/fonts"],
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600],
+      styles: ["normal", "italic"],
+      subsets: [
+        "cyrillic-ext",
+        "cyrillic",
+        "greek-ext",
+        "greek",
+        "vietnamese",
+        "latin-ext",
+        "latin",
+      ],
+    },
+  },
 });
