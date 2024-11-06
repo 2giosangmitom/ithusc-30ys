@@ -20,7 +20,7 @@ useHeadSafe({
 
 <template>
   <div>
-    <Header />
+    <TheHeader />
   </div>
 </template>
 

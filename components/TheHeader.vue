@@ -6,9 +6,9 @@
         alt="logo with text"
         width="250"
         height="auto"
-      />
+      >
     </div>
-    <Nav />
+    <NavBar />
   </header>
 </template>
 

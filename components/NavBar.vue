@@ -2,8 +2,8 @@
 const parts = [
   { name: "Giới thiệu", href: "#intro" },
   { name: "Lịch sử", href: "#history" },
-  { name: "Chi tiết về sự kiện", href: "#details" },
   { name: "Thành tựu", href: "#achievements" },
+  { name: "Chi tiết về sự kiện", href: "#details" },
 ];
 
 const isOpen = ref(false);
@@ -16,23 +16,28 @@ const triggerIcon = computed(() =>
 <template>
   <nav class="nav mobile-nav">
     <button
-      @click.prevent="isOpen = !isOpen"
       class="nav__trigger"
       aria-label="Toggle navigation"
+      @click.prevent="isOpen = !isOpen"
     >
-      <iconify-icon :icon="triggerIcon"></iconify-icon>
+      <iconify-icon :icon="triggerIcon" />
     </button>
 
     <div v-show="isOpen" class="mobile-nav__content">
       <div class="mobile-nav__logo">
-        <img src="/images/logo.png" alt="Logo without text" width="50" />
+        <img
+          src="/images/logo.png"
+          alt="Logo without text"
+          width="50"
+          height="50"
+        >
       </div>
       <ul class="mobile-nav__list">
         <li
           v-for="part in parts"
           :key="part.href"
-          @click="isOpen = !isOpen"
           class="mobile-nav__item"
+          @click="isOpen = !isOpen"
         >
           <a :href="part.href" class="mobile-nav__link">{{ part.name }}</a>
         </li>
@@ -40,7 +45,7 @@ const triggerIcon = computed(() =>
     </div>
   </nav>
 
-  <nav class="nav desktop-nav"></nav>
+  <nav class="nav desktop-nav" />
 </template>
 
 <style>
