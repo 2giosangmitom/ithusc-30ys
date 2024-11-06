@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/eslint", "@vueuse/motion/nuxt", "@nuxt/fonts"],
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === "iconify-icon",
+    },
+  },
   fonts: {
     defaults: {
       weights: [400, 500, 600],

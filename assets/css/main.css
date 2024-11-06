@@ -7,3 +7,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --accent-color: #26335d;
+  --text: #fcfcfd;
+  --red: #e74040;
+  --orange: #ff7b52;
+}

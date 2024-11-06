@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import "iconify-icon";
 useSeoMeta({
   title:
     "Chào mừng 30 năm thành lập khoa Công nghệ thông tin - Đại học Khoa Học Huế",

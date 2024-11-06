@@ -14,7 +14,7 @@
 
 <style>
 .header {
-  background-color: #26335d;
+  background-color: var(--accent-color);
   display: flex;
   align-items: center;
   height: 80px;
