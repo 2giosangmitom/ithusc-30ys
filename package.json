@@ -1,24 +1,21 @@
 {
-  "name": "nuxt-app",
+  "name": "ithusc-landing-page",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.6.1",
-    "@nuxt/fonts": "^0.10.2",
-    "@vueuse/motion": "^2.2.6",
-    "iconify-icon": "^2.1.0",
-    "nuxt": "^3.14.0",
-    "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "@iconify/vue": "^4.1.2",
+    "vue": "^3.5.12"
   },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.8"
+  }
 }
