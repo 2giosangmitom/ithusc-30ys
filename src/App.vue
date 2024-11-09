@@ -20,4 +20,8 @@ import TheAchievements from "./components/TheAchievements.vue";
   <TheFooter />
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  margin: 0 2rem;
+}
+</style>

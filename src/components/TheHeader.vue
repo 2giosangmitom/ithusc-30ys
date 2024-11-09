@@ -15,7 +15,7 @@ const isOpen = ref(false); // Mobile sidebar state
 
 <template>
   <header class="header">
-    <a href="/" class="header__logo">
+    <a href="#home" class="header__logo">
       <img src="/images/logo_with_white_text.png" alt="logo with text" />
     </a>
 
@@ -29,7 +29,9 @@ const isOpen = ref(false); // Mobile sidebar state
           <Icon icon="mingcute:close-fill" />
         </button>
         <li>
-          <img src="/images/logo.png" alt="logo" />
+          <a href="#home" @click="isOpen = !isOpen">
+            <img src="/images/logo.png" alt="logo" />
+          </a>
         </li>
         <li v-for="part in parts" :key="part.name" @click="isOpen = !isOpen">
           <a :href="part.href">{{ part.name }}</a>

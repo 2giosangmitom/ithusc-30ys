@@ -10,7 +10,16 @@
   --orange: #ff7b52;
 }
 
+body {
+  background-color: #fbfbfb;
+}
+
 @font-face {
   font-family: "Noto Sans";
   src: url("../fonts/NotoSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay.ttf") format("truetype");
 }
