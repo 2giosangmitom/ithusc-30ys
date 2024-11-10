@@ -6,12 +6,14 @@ import TheFooter from "./components/TheFooter.vue";
 import TheHistory from "./components/TheHistory.vue";
 import TheDetails from "./components/TheDetails.vue";
 import TheAchievements from "./components/TheAchievements.vue";
+import SectionDivisor from "./components/SectionDivisor.vue";
 </script>
 
 <template>
   <TheHeader />
   <main>
     <TheBanner />
+    <SectionDivisor />
     <TheIntro />
     <TheHistory />
     <TheAchievements />

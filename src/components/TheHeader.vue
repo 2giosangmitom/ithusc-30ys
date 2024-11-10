@@ -24,6 +24,12 @@ const isOpen = ref(false); // Mobile sidebar state
         <Icon icon="mingcute:menu-fill" />
       </button>
 
+      <div
+        class="overlay"
+        :class="{ opened: isOpen }"
+        @click="isOpen = false"
+      ></div>
+
       <ul class="mobile_nav__list" :class="{ opened: isOpen }">
         <button class="mobile_nav__list__close_btn" @click="isOpen = !isOpen">
           <Icon icon="mingcute:close-fill" />
@@ -90,6 +96,25 @@ const isOpen = ref(false); // Mobile sidebar state
   color: var(--accent-color);
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 4;
+}
+
+.overlay.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
 .mobile_nav__list {
   list-style: none;
   position: fixed;
@@ -104,7 +129,6 @@ const isOpen = ref(false); // Mobile sidebar state
   text-align: center;
   padding: 20px;
   gap: 20px;
-  font-family: "Noto Sans";
   font-size: 1.25rem;
   font-weight: 700;
   transform: translateX(100%);
@@ -146,15 +170,16 @@ const isOpen = ref(false); // Mobile sidebar state
   transition: all 0.3s;
 }
 
-.mobile_nav__list li:not(:first-child :nth-child(2)) a:hover {
+.mobile_nav__list li:not(:first-child):hover a {
   color: var(--orange);
 }
 
-.mobile_nav__list:nth-child(2) {
+.mobile_nav__list li:nth-child(2) {
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
-.mobile_nav__list:nth-child(2) img {
+.mobile_nav__list img {
   width: 50px;
   height: 50px;
 }
