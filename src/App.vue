@@ -12,11 +12,9 @@ import SectionDivisor from "./components/SectionDivisor.vue";
 import { useEventListener } from "@vueuse/core";
 
 const loading = ref(true);
-const hideLoadingScreen = () => {
+useEventListener(window, "load", () => {
   loading.value = false;
-};
-
-useEventListener(window, "load", hideLoadingScreen);
+});
 </script>
 
 <template>
