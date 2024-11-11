@@ -15,9 +15,9 @@ const isOpen = ref(false); // Mobile sidebar state
 
 <template>
   <header class="header">
-    <a href="#home" class="header__logo">
+    <span class="header__logo">
       <img src="/images/logo_with_white_text.png" alt="logo with text" />
-    </a>
+    </span>
 
     <nav class="mobile_nav">
       <button class="mobile_nav__trigger" @click="isOpen = !isOpen">

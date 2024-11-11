@@ -136,7 +136,7 @@
 }
 
 .home__horizontal_line {
-  width: 80%;
+  width: 50%;
   height: 2px;
   background-color: grey;
   margin: 2rem auto;
