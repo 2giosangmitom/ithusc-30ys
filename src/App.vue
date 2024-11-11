@@ -14,7 +14,6 @@ import { useEventListener } from "@vueuse/core";
 const loading = ref(true);
 const hideLoadingScreen = () => {
   loading.value = false;
-  console.log("Loading screen hidden");
 };
 
 useEventListener(window, "load", hideLoadingScreen);
