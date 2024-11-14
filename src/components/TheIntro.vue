@@ -22,8 +22,13 @@ const motionProps = {
   duration: 2000,
 };
 
-function onIntersectionObserver([{ isIntersecting }]: IntersectionObserverEntry[]) {
-  targetVisible.value = isIntersecting;
+function onIntersectionObserver(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
+  entries.forEach((entry) => {
+    targetVisible.value = entry.isIntersecting;
+    if (entry.intersectionRatio > 0) {
+      observer.unobserve(entry.target);
+    }
+  });
 }
 </script>
 
