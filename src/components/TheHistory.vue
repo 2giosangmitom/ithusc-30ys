@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const history = [
   {
-    date: "13 - 12 - 1994",
+    date: "13/12/1994",
     content: "Bộ Giáo Dục và Đào Tạo ra quyết định thành lập Khoa Công nghệ thông tin tại Đại học Huế",
   },
   {
-    date: "01 - 06 - 1995",
+    date: "01/06/1995",
     content:
       "Chính thức đào tạo cử nhân ngành Công nghệ thông tin, trở thành 1 trong 6 khoa Công nghệ thông tin trọng điểm trên toàn quốc",
   },
@@ -57,7 +57,7 @@ const history = [
 .history__content__item__date {
   font-weight: 500;
   position: relative;
-  flex: 0 0 160px;
+  flex: 0 0 140px;
   padding-bottom: 32px;
 }
 
@@ -84,7 +84,6 @@ const history = [
 
 .history__content__item__content {
   flex: 1;
-  padding-left: 5px;
   padding-top: 5px;
 }
 </style>
