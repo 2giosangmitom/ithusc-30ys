@@ -34,7 +34,13 @@ const history = [
       <h3>Lịch sử phát triển</h3>
     </div>
     <div class="history__content">
-      <div class="history__content__item" v-for="(item, _index) in history" :key="item.date">
+      <div
+        class="history__content__item"
+        v-for="(item, index) in history"
+        :key="item.date"
+        v-motion-fade
+        :duration="index * 100 + 500"
+      >
         <span class="history__content__item__date">{{ item.date }}</span>
         <p class="history__content__item__content">{{ item.content }}</p>
       </div>
