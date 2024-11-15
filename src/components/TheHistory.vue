@@ -35,7 +35,6 @@ const targetVisible = ref(false);
 function onIntersectionObserver(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
   entries.forEach((entry) => {
     targetVisible.value = entry.isIntersecting;
-    console.log("Timeline", entry.isIntersecting);
     if (entry.intersectionRatio > 0) {
       observer.unobserve(entry.target);
     }
@@ -56,7 +55,8 @@ function onIntersectionObserver(entries: IntersectionObserverEntry[], observer: 
         v-motion
         :initial="{ opacity: 0 }"
         :enter="{ opacity: 1 }"
-        :delay="index * 100 + 500"
+        :delay="index * 100 + 1000"
+        :duration="500"
       >
         <span class="history__content__item__date">{{ item.date }}</span>
         <p class="history__content__item__content">{{ item.content }}</p>
