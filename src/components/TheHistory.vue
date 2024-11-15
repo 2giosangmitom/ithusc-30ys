@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref } from "vue";
+import { vIntersectionObserver } from "@vueuse/components";
+
 const history = [
   {
     date: "13/12/1994",
@@ -26,20 +29,34 @@ const history = [
     content: "Đào tạo Thạc sĩ ngành Quản lí công nghệ thông tin",
   },
 ];
+
+const targetVisible = ref(false);
+
+function onIntersectionObserver(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
+  entries.forEach((entry) => {
+    targetVisible.value = entry.isIntersecting;
+    console.log("Timeline", entry.isIntersecting);
+    if (entry.intersectionRatio > 0) {
+      observer.unobserve(entry.target);
+    }
+  });
+}
 </script>
 
 <template>
-  <section id="history">
+  <section id="history" v-intersection-observer="onIntersectionObserver">
     <div class="history__title">
       <h3>Lịch sử phát triển</h3>
     </div>
-    <div class="history__content">
+    <div v-if="targetVisible" class="history__content">
       <div
         class="history__content__item"
         v-for="(item, index) in history"
         :key="item.date"
-        v-motion-fade
-        :duration="index * 100 + 500"
+        v-motion
+        :initial="{ opacity: 0 }"
+        :enter="{ opacity: 1 }"
+        :delay="index * 100 + 500"
       >
         <span class="history__content__item__date">{{ item.date }}</span>
         <p class="history__content__item__content">{{ item.content }}</p>
@@ -73,7 +90,7 @@ const history = [
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  border: 2px solid #ff6732;
+  border: 2px solid var(--accent-color);
   right: 32px;
   top: 4px;
 }
