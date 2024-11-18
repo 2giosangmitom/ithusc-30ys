@@ -107,6 +107,5 @@ function onIntersectionObserver(entries: IntersectionObserverEntry[], observer: 
 
 .history__content__item__content {
   flex: 1;
-  padding-top: 5px;
 }
 </style>
