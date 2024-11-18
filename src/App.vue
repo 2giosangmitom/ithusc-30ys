@@ -7,7 +7,6 @@ import TheIntro from "./components/TheIntro.vue";
 import TheFooter from "./components/TheFooter.vue";
 import TheHistory from "./components/TheHistory.vue";
 import TheDetails from "./components/TheDetails.vue";
-import TheAchievements from "./components/TheAchievements.vue";
 import SectionDivisor from "./components/SectionDivisor.vue";
 import { useEventListener } from "@vueuse/core";
 
@@ -27,7 +26,6 @@ useEventListener(window, "load", () => {
         <SectionDivisor />
         <TheIntro />
         <TheHistory />
-        <TheAchievements />
         <TheDetails />
       </main>
       <TheFooter />
