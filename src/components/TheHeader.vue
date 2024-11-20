@@ -6,7 +6,6 @@ import { Icon } from "@iconify/vue";
 const parts = [
   { name: "Giới thiệu", href: "#intro" },
   { name: "Lịch sử", href: "#history" },
-  { name: "Thành tựu", href: "#achievements" },
   { name: "Chi tiết về sự kiện", href: "#details" },
 ];
 
