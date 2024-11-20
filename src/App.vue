@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import LoadingScreen from "./components/LoadingScreen.vue";
 import TheHeader from "./components/TheHeader.vue";
 import TheBanner from "./components/TheBanner.vue";
 import TheIntro from "./components/TheIntro.vue";
@@ -18,18 +17,15 @@ useEventListener(window, "load", () => {
 
 <template>
   <div>
-    <LoadingScreen v-if="loading" />
-    <div v-else>
-      <TheHeader />
-      <main>
-        <TheBanner />
-        <SectionDivisor />
-        <TheIntro />
-        <TheHistory />
-        <TheDetails />
-      </main>
-      <TheFooter />
-    </div>
+    <TheHeader />
+    <main>
+      <TheBanner />
+      <SectionDivisor />
+      <TheIntro />
+      <TheHistory />
+      <TheDetails />
+    </main>
+    <TheFooter />
   </div>
 </template>
 
