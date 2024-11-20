@@ -10,11 +10,13 @@
   --accent-color: #26335d;
   --text: #fcfcfd;
   --orange: #ff7b52;
+  --text-black: #151515;
 }
 
 body {
   background-color: #fbfbfb;
   font-family: "Noto Sans", sans-serif;
+  color: var(--text-black);
 }
 
 @font-face {
