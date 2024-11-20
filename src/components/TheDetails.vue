@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Ref, ref } from "vue";
+import { Ref, ref, useTemplateRef } from "vue";
+import { useEventListener } from "@vueuse/core";
 
 type Detail = {
   title: string;
@@ -8,7 +9,7 @@ type Detail = {
   time?: string;
 };
 
-const details: Ref<Detail[]> = ref([
+const fullDetails: Detail[] = [
   {
     title: "Lễ mít tinh kỷ niệm 30 năm thành lập khoa",
     location: "Sảnh A, trường ĐH Khoa học, Đại học Huế",
@@ -60,17 +61,23 @@ const details: Ref<Detail[]> = ref([
     date: "31 tháng 5, 2025",
     time: "18:00",
   },
-]);
+];
 
-const searchBox = ref();
+const details: Ref<Detail[]> = ref(fullDetails);
 
-function handleSearch() {
-  // const searchValue = searchBox.value.value.toLowerCase();
-  // details.value = details.value.filter((detail) =>
-  //   detail.title.toLowerCase().includes(searchValue)
-  // );
-  console.log("Dep zai");
-}
+const searchBox = useTemplateRef("searchBox");
+
+useEventListener(searchBox, "keydown", (e) => {
+  if (e.key === "Enter") {
+    if (searchBox.value?.value === "") {
+      details.value = fullDetails;
+    } else {
+      details.value = details.value.filter((item) => {
+        return item.title.toLowerCase().includes(searchBox.value?.value.toLowerCase() || "");
+      });
+    }
+  }
+});
 </script>
 
 <template>
