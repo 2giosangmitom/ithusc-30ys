@@ -1,30 +1,10 @@
-<script setup lang="ts">
-const motionProps = {
-  initial: {
-    y: 100,
-    opacity: 0,
-  },
-  enter: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 250,
-      damping: 25,
-      mass: 0.5,
-    },
-  },
-  duration: 1000,
-};
-</script>
-
 <template>
   <section id="home">
-    <h1 v-motion v-bind="motionProps" :delay="200">30th Anniversary</h1>
-    <div v-motion v-bind="motionProps" :delay="300" class="home__vertical_line"></div>
-    <h2 v-motion v-bind="motionProps" :delay="400">Kỉ niệm 30 năm thành lập khoa Công nghệ thông tin</h2>
-    <div v-motion v-bind="motionProps" :delay="500" class="home__horizontal_line"></div>
-    <img v-motion v-bind="motionProps" :delay="600" src="/images/30th_anniversary_banner.jpg" alt="banner" />
+    <h1>30th Anniversary</h1>
+    <div class="home__vertical_line"></div>
+    <h2>Kỉ niệm 30 năm thành lập khoa Công nghệ thông tin</h2>
+    <div class="home__horizontal_line"></div>
+    <img src="/images/30th_anniversary_banner.jpg" alt="banner" />
   </section>
 </template>
 

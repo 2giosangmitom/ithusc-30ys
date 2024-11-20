@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { vIntersectionObserver } from "@vueuse/components";
-
 const history = [
   {
     date: "13/12/1994",
@@ -29,35 +26,15 @@ const history = [
     content: "Đào tạo Thạc sĩ ngành Quản lí công nghệ thông tin",
   },
 ];
-
-const targetVisible = ref(false);
-
-function onIntersectionObserver(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
-  entries.forEach((entry) => {
-    targetVisible.value = entry.isIntersecting;
-    if (entry.intersectionRatio > 0) {
-      observer.unobserve(entry.target);
-    }
-  });
-}
 </script>
 
 <template>
-  <section id="history" v-intersection-observer="onIntersectionObserver">
+  <section id="history">
     <div class="history__title">
       <h3>Lịch sử phát triển</h3>
     </div>
-    <div v-if="targetVisible" class="history__content">
-      <div
-        class="history__content__item"
-        v-for="(item, index) in history"
-        :key="item.date"
-        v-motion
-        :initial="{ opacity: 0 }"
-        :enter="{ opacity: 1 }"
-        :delay="index * 100 + 1000"
-        :duration="500"
-      >
+    <div class="history__content">
+      <div class="history__content__item" v-for="item in history" :key="item.date">
         <span class="history__content__item__date">{{ item.date }}</span>
         <p class="history__content__item__content">{{ item.content }}</p>
       </div>
