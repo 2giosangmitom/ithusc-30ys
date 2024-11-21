@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
-import { useEventListener, useDebounceFn } from "@vueuse/core";
-import { ref } from "vue";
-
 function handleClick() {
   window.scrollTo({
     top: 0,
@@ -16,13 +12,13 @@ useEventListener(
   "scroll",
   useDebounceFn(() => {
     visible.value = window.scrollY >= 500;
-  }, 0),
+  }, 0)
 );
 </script>
 
 <template>
   <button v-if="visible" @click="handleClick" class="scroll-to-top">
-    <Icon icon="line-md:arrow-up" />
+    <Icon name="line-md:arrow-up" />
   </button>
 </template>
 
@@ -31,7 +27,7 @@ useEventListener(
   border-radius: 100%;
   outline: none;
   background-color: #ebeaff;
-  color: var(--text-black);
+  color: black;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   position: fixed;
