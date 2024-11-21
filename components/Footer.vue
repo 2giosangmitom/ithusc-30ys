@@ -3,7 +3,7 @@
     class="bg-[url(/cntt.jpg)] bg-cover p-2rem mt-2rem relative flex flex-col before:content-empty before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/80 z-0"
   >
     <div class="relative text-white mb-2rem">
-      <img
+      <NuxtImg
         src="/logo_with_white_text.png"
         alt="Trường Đại học Khoa học logo"
         width="320px"

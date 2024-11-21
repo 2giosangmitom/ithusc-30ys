@@ -92,7 +92,7 @@ useEventListener(searchBox, "keydown", (e) => {
           type="text"
           placeholder="Tìm kiếm"
           ref="searchBox"
-          class="p-10px border-radius-20px border-2px border-#26335d transition-all-300 text-1rem shadow-sm shadow-black/50 outline-none placeholder-black focus:outline-1px focus:outline-#26335d"
+          class="p-10px border-radius-25px border-2px border-#26335d transition-all-300 text-1rem shadow-sm shadow-black/50 outline-none placeholder-black focus:outline-1px focus:outline-#26335d"
         />
       </div>
 
