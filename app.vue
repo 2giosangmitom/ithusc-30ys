@@ -9,7 +9,7 @@ useSeoMeta({
 
 <template>
   <Header />
-  <main>
+  <main class="mx-2rem">
     <Banner />
     <SectionDivisor />
     <Intro />

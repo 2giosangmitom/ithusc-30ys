@@ -1,3 +1,46 @@
 <template>
-  <footer>Footer</footer>
+  <footer
+    class="bg-[url(/cntt.jpg)] bg-cover p-2rem mt-2rem relative flex flex-col before:content-empty before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/80 z-0"
+  >
+    <div class="relative text-white mb-2rem">
+      <img
+        src="/logo_with_white_text.png"
+        alt="Trường Đại học Khoa học logo"
+        width="320px"
+      />
+    </div>
+    <div class="relative text-white mb-2rem">
+      <h4 class="uppercase">Liên hệ với chúng tôi</h4>
+      <div>
+        <p><span>Địa chỉ:</span> 77 Nguyễn Huệ, Thành Phố Huế</p>
+        <p>
+          <span>Số điện thoại:</span>
+          <a href="tel:(0234) 3823290" class="underline">(0234) 3823290</a>
+        </p>
+        <p>
+          <span>Email:</span>
+          <a href="mailto:khcndhkh@hueuni.edu.vn" class="underline"
+            >khcndhkh@hueuni.edu.vn</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="relative text-white flex flex-col">
+      <h4 class="uppercase">Kết nối với chúng tôi</h4>
+      <a
+        href="https://husc.edu.vn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline"
+        >Trường Đại học Khoa học</a
+      >
+      <a
+        href="https://it.husc.edu.vn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline"
+        >Khoa Công nghệ thông tin</a
+      >
+    </div>
+  </footer>
 </template>

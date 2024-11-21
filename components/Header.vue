@@ -11,7 +11,7 @@ const parts = [
 <template>
   <header class="bg-accent h-80px flex items-center justify-between px-1rem">
     <div>
-      <img
+      <NuxtImg
         src="/logo_with_white_text.png"
         alt="it husc logo"
         width="280px"
@@ -48,7 +48,7 @@ const parts = [
 
         <li class="mt-4rem">
           <a href="#home" @click="isOpen = !isOpen">
-            <NuxtImg src="/logo.png" alt="logo" width="50px" />
+            <NuxtImg src="/logo.png" alt="logo" width="50px" height="50px" />
           </a>
         </li>
 

@@ -14,12 +14,13 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        devShells.default = pkgs.mkShellNoCC {
+        devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             bashInteractive
             nodejs_22
             pnpm
             just
+            vips
           ];
           shellHook = ''
             export SHELL="${pkgs.bashInteractive}/bin/bash"
