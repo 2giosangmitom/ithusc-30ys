@@ -20,7 +20,6 @@
             nodejs_22
             pnpm
             just
-            vips
           ];
           shellHook = ''
             export SHELL="${pkgs.bashInteractive}/bin/bash"
