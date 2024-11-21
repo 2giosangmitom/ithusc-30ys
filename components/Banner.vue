@@ -3,7 +3,7 @@
     <NuxtImg
       src="/banner.jpg"
       alt="banner"
-      class="border-radius-5px shadow-md shadow-black/50"
+      class="border-radius-5px shadow-md shadow-black/50 mx-auto"
     />
   </section>
 </template>
