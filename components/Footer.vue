@@ -12,13 +12,18 @@
     <div class="relative text-white mb-2rem">
       <h4 class="uppercase">Liên hệ với chúng tôi</h4>
       <div>
-        <p><span>Địa chỉ:</span> 77 Nguyễn Huệ, Thành Phố Huế</p>
         <p>
-          <span>Số điện thoại:</span>
-          <a href="tel:(0234) 3823290" class="underline">(0234) 3823290</a>
+          <span class="inline-block min-w110px">Địa chỉ:</span> 77 Nguyễn Huệ,
+          Thành Phố Huế
         </p>
         <p>
-          <span>Email:</span>
+          <span class="inline-block min-w110px">Số điện thoại:</span>
+          <a href="tel:(84) (234) 3826767" class="underline"
+            >(84) (234) 3826767</a
+          >
+        </p>
+        <p>
+          <span class="inline-block min-w110px">Email:</span>
           <a href="mailto:khcndhkh@hueuni.edu.vn" class="underline"
             >khcndhkh@hueuni.edu.vn</a
           >
