@@ -30,8 +30,9 @@ const parts = [
 
       <div
         @click="isOpen = false"
-        class="fixed top-0 left-0 w-full h-full bg-black/50 z-0 backdrop-blur-sm"
-        v-show="isOpen"
+        class="fixed top-0 left-0 w-full h-full bg-black/50 z-0 backdrop-blur-sm transition-opacity duration-300"
+        :class="{ 'opacity-0': !isOpen }"
+        :style="{ visibility: isOpen ? 'visible' : 'hidden' }"
       ></div>
 
       <ul
