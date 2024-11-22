@@ -9,7 +9,9 @@ const parts = [
 </script>
 
 <template>
-  <header class="bg-accent h-80px flex items-center justify-between px-1rem">
+  <header
+    class="bg-accent h-80px flex items-center justify-between px-2rem shadow-md sm:px-3rem md:px-4rem lg:px-7rem xl:px-10rem"
+  >
     <div>
       <NuxtImg
         src="/logo_with_white_text.png"
@@ -19,7 +21,7 @@ const parts = [
     </div>
 
     <!-- Mobile navigation -->
-    <nav>
+    <nav class="lg:hidden">
       <button
         @click="isOpen = !isOpen"
         class="border flex items-center justify-center border-amber-6 border-2px p-10px outline-none border-radius-5px text-white text-1.25rem hover:bg-orange-6 transition-all-300 z-0"
@@ -29,7 +31,7 @@ const parts = [
 
       <div
         @click="isOpen = false"
-        class="fixed top-0 left-0 w-full h-full bg-black/50 z-0 backdrop-blur-sm transition-opacity duration-300"
+        class="fixed top-0 left-0 w-full h-full bg-black/50 z-0 transition-opacity duration-300"
         :class="{ 'opacity-0': !isOpen }"
         :style="{ visibility: isOpen ? 'visible' : 'hidden' }"
       ></div>
@@ -63,6 +65,12 @@ const parts = [
     </nav>
 
     <!-- Desktop navigation -->
-    <nav class="hidden"></nav>
+    <nav class="hidden lg:block">
+      <ul class="flex gap-1.5rem text-white font-bold text-1.2rem">
+        <li v-for="item in parts" class="transition hover:text-orange-5">
+          <a :href="item.href">{{ item.name }}</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>

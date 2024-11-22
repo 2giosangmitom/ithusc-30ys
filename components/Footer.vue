@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-[url(/cntt.jpg)] bg-cover p-2rem mt-2rem relative flex flex-col before:content-empty before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/80 z-0"
+    class="bg-[url(/cntt.jpg)] bg-cover p-2rem mt-2rem relative flex flex-col before:content-empty before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/80 z-0 sm:p-3rem md:p-4rem lg:p-7rem xl:px-10rem"
   >
     <div class="relative text-white mb-2rem">
       <NuxtImg

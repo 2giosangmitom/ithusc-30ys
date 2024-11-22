@@ -1,6 +1,6 @@
 <template>
   <section id="intro">
-    <h2>Thông tin tổng quan</h2>
+    <h2>Về chúng tôi</h2>
     <p class="mb-10px">
       Ngày 13/12/1994 Bộ Giáo dục và Đào tạo ký quyết định thành lập khoa Công
       nghệ Thông tin (CNTT) thuộc trường Đại học Khoa học - Đại học Huế, một

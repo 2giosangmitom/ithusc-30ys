@@ -1,1 +1,6 @@
+User-agent: *
+Disallow: /_nuxt/
+Disallow: /__webpack_hmr
+Allow: /
 
+Sitemap: /sitemap.xml

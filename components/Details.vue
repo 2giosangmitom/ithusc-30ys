@@ -74,7 +74,9 @@ useEventListener(searchBox, "keydown", (e) => {
 
 <template>
   <section id="details" class="mt-1rem">
-    <div class="bg-accent text-white p-20px -mx-2rem">
+    <div
+      class="bg-accent text-white p-2rem -mx-2rem sm:-mx-3rem sm:px-3rem md:-mx-4rem md:px-4rem lg:-mx-7rem lg:px-7rem xl:-mx-10rem xl:px-10rem"
+    >
       <div class="flex items-center mb-5px">
         <p class="text-nowrap">Lịch trình của sự kiện</p>
         <div class="w-full h-1px bg-white ml-20px"></div>
@@ -100,17 +102,17 @@ useEventListener(searchBox, "keydown", (e) => {
         <div
           v-for="(detail, index) in details"
           :key="detail.title"
-          class="py-20px"
+          class="py-20px lg:flex lg:justify-between"
           :class="{
             'border-b-2px border-#26335d': index != details.length - 1,
           }"
         >
-          <div>
-            <strong class="text-#26335d text-1.25rem">{{
-              detail.title
-            }}</strong>
+          <div class="lg:border-r border-#b7b7b7 lg:w-60% lg:mr-20px">
+            <strong class="text-#26335d text-1.25rem lg:text-2rem">
+              {{ detail.title }}
+            </strong>
           </div>
-          <div>
+          <div class="lg:w-40%">
             <div class="flex py-10px border-b border-#b7b7b7">
               <p class="min-w-150px font-bold">Ngày</p>
               <p>{{ detail.date }}</p>

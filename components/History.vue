@@ -33,9 +33,6 @@ const history = [
 
 <template>
   <section id="history" class="mt-1rem">
-    <div>
-      <h3>Lịch sử phát triển</h3>
-    </div>
     <div class="flex flex-col">
       <div
         v-for="(item, index) in history"

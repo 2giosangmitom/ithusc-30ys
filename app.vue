@@ -9,11 +9,13 @@ useSeoMeta({
 
 <template>
   <Header />
-  <main class="mx-2rem">
+  <main class="mx-2rem sm:mx-3rem md:mx-4rem lg:mx-7rem xl:mx-10rem">
     <Banner />
     <SectionDivisor />
-    <Intro />
-    <History />
+    <div class="lg:grid lg:grid-cols-2 lg:gap-4rem">
+      <Intro />
+      <History />
+    </div>
     <Details />
   </main>
   <Footer />
