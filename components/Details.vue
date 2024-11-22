@@ -114,7 +114,9 @@ useEventListener(searchBox, "keydown", (e) => {
             'border-b-2px border-#26335d': index != details.length - 1,
           }"
         >
-          <div class="lg:border-r border-#b7b7b7 lg:w-60% lg:mr-20px">
+          <div
+            class="lg:border-r lg:border-#b7b7b7 lg:w-60% lg:mr-20px lg:pr-20px"
+          >
             <strong class="text-#26335d text-1.25rem lg:text-2rem">
               {{ detail.title }}
             </strong>
