@@ -85,7 +85,7 @@ useEventListener(searchBox, "keydown", (e) => {
     </div>
 
     <div>
-      <div class="my-2rem flex flex-col">
+      <div class="my-2rem flex flex-col lg:w-800px lg:mx-auto">
         <div
           class="flex justify-between items-center mb-10px text-0.9rem uppercase mb-5px"
         >
