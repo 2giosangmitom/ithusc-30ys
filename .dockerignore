@@ -1,0 +1,33 @@
+# Node.js dependencies
+node_modules
+
+# Build output
+.nuxt
+.output
+
+# Git files
+.git
+.gitignore
+
+# Configuration files
+devcontainer/
+Dockerfile
+docker-compose.yml
+
+# Logs
+*.log
+
+# OS and editor files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Other unnecessary files
+dist/
+coverage/
+.env
+.env.local
+.env.*.local
+flake.nix
+flake.lock
