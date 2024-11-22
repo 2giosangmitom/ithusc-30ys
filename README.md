@@ -11,11 +11,12 @@ This is a **front-end project** built for the 30th anniversary of the IT Departm
 - **Utilities**: [VueUse](https://vueuse.org) and other supportive libraries
 - **Package Management**: [pnpm](https://pnpm.io)
 
-## Features
+## Preview links
 
-- Responsive design with UnoCSS
-- Optimized performance with Nuxt
-- Enhanced developer experience using VueUse and modular components
+You can use one of these links to view the result.
+
+- [https://ithusc-30ys.netlify.app/](https://ithusc-30ys.netlify.app/)
+- [https://ithusc-30ys.vercel.app/](https://ithusc-30ys.vercel.app/)
 
 ---
 
