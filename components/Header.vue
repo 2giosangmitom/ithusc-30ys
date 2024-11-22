@@ -15,7 +15,6 @@ const parts = [
         src="/logo_with_white_text.png"
         alt="it husc logo"
         width="280px"
-        height="60px"
       />
     </div>
 
