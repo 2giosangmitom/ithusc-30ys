@@ -22,11 +22,11 @@ You can use one of these links to view the result.
 
 ## Requirements
 
-- **Container Tools**:  
-  - [Docker](https://www.docker.com)  
+- **Container Tools**:
+  - [Docker](https://www.docker.com)
   - [Podman](https://podman.io) (alternative to Docker)  
-  or
-- **Node.js** (v20 or later recommended)  
+    or
+- **Node.js** (v20 or later recommended)
 - **pnpm** (v9)
 
 ---
@@ -36,16 +36,19 @@ You can use one of these links to view the result.
 ### Using Docker
 
 1. **Build the Docker image**:
+
    ```bash
    docker build -t ithusc-30ys .
    ```
 
 2. **Run the container**:
+
    ```bash
    docker run -d -p 3000:3000 --replace --name ithusc-container ithusc-30ys
    ```
 
 3. **Stop the container** (if needed):
+
    ```bash
    docker stop ithusc-container
    ```
@@ -58,16 +61,19 @@ You can use one of these links to view the result.
 ### Using Podman
 
 1. **Build the Podman image**:
+
    ```bash
    podman build -t ithusc-30ys .
    ```
 
 2. **Run the container**:
+
    ```bash
    podman run -d -p 3000:3000 --replace --name ithusc-container localhost/ithusc-30ys
    ```
 
 3. **Stop the container** (if needed):
+
    ```bash
    podman stop ithusc-container
    ```
@@ -80,16 +86,19 @@ You can use one of these links to view the result.
 ### Using Node.js and pnpm
 
 1. **Install dependencies**:
+
    ```bash
    pnpm install
    ```
 
 2. **Start the development server**:
+
    ```bash
    pnpm dev
    ```
 
 3. **Build for production**:
+
    ```bash
    pnpm build
    ```
