@@ -1,4 +1,4 @@
-FROM node:22-alpine as base
+FROM node:20-alpine as base
 
 # Base image for building
 FROM base as builder

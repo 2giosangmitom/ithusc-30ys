@@ -17,8 +17,8 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             bashInteractive
-            nodejs_22
-            pnpm
+            nodejs_20
+            corepack_20
             just
           ];
           shellHook = ''
