@@ -1,29 +1,25 @@
 <template>
   <footer
-    class="bg-[url(/cntt.jpg)] bg-cover p-2rem mt-2rem relative flex flex-col before:content-empty before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/80 z-0 sm:p-3rem md:p-4rem lg:p-7rem xl:px-10rem"
+    class="bg-[url(/cntt.jpg)] bg-center bg-cover p-2rem mt-2rem relative flex flex-col before:content-empty before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/80 z-0 sm:p-3rem md:p-4rem lg:p-7rem xl:px-10rem xl:py-10rem lg:grid lg:grid-cols-3"
   >
     <div class="relative text-white mb-2rem">
-      <NuxtImg
-        src="/logo_with_white_text.png"
-        alt="logo"
-        width="320px"
-      />
+      <NuxtImg src="/logo_with_white_text.png" alt="logo" width="320px" />
     </div>
     <div class="relative text-white mb-2rem">
       <h4 class="uppercase">Liên hệ với chúng tôi</h4>
       <div>
         <p>
-          <span class="inline-block min-w110px">Địa chỉ:</span> 77 Nguyễn Huệ,
+          <span class="inline-block mr-10px">Địa chỉ:</span> 77 Nguyễn Huệ,
           Thành Phố Huế
         </p>
         <p>
-          <span class="inline-block min-w110px">Số điện thoại:</span>
+          <span class="inline-block mr-10px">Số điện thoại:</span>
           <a href="tel:(84) (234) 3826767" class="underline"
             >(84) (234) 3826767</a
           >
         </p>
         <p>
-          <span class="inline-block min-w110px">Email:</span>
+          <span class="inline-block mr-10px">Email:</span>
           <a href="mailto:khcndhkh@hueuni.edu.vn" class="underline"
             >khcndhkh@hueuni.edu.vn</a
           >
