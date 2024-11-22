@@ -5,7 +5,7 @@
     <div class="relative text-white mb-2rem">
       <NuxtImg
         src="/logo_with_white_text.png"
-        alt="Trường Đại học Khoa học logo"
+        alt="logo"
         width="320px"
       />
     </div>
