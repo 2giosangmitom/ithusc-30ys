@@ -62,7 +62,7 @@ useEventListener(searchBox, "keydown", (e) => {
     if (searchBox.value?.value === "") {
       details.value = fullDetails;
     } else {
-      details.value = details.value.filter((item) => {
+      details.value = fullDetails.filter((item) => {
         return item.title
           .toLowerCase()
           .includes(searchBox.value?.value.toLowerCase() || "");
@@ -78,7 +78,7 @@ useEventListener(searchBox, "keydown", (e) => {
       class="bg-accent text-white p-2rem -mx-2rem sm:-mx-3rem sm:px-3rem md:-mx-4rem md:px-4rem lg:-mx-7rem lg:px-7rem xl:-mx-10rem xl:px-10rem"
     >
       <div class="flex items-center mb-5px">
-        <p class="text-nowrap">Lịch trình của sự kiện</p>
+        <p class="text-nowrap">Các hoạt động kỉ niệm</p>
         <div class="w-full h-1px bg-white ml-20px"></div>
       </div>
       <h2 class="font-[Playfair_Display]">Chi tiết về lễ kỷ niệm</h2>
@@ -86,9 +86,16 @@ useEventListener(searchBox, "keydown", (e) => {
 
     <div>
       <div class="my-2rem flex flex-col">
-        <label for="search_box" class="text-0.9rem uppercase mb-5px"
-          >Tìm kiếm từ khóa</label
+        <div
+          class="flex justify-between items-center mb-10px text-0.9rem uppercase mb-5px"
         >
+          <label for="search_box">Tìm kiếm từ khóa</label>
+          <label for="search_box">
+            Đang hiển thị {{ details.length }} / {{ fullDetails.length }} hoạt
+            động
+          </label>
+        </div>
+
         <input
           id="search_box"
           type="text"
