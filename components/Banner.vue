@@ -36,8 +36,8 @@ useIntervalFn(nextBanner, 5000);
           :src="banner"
           alt="banner"
           class="w-full h-full object-cover"
-          width="2048px"
-          height="1152px"
+          width="2048"
+          height="1152"
         />
       </div>
     </div>
