@@ -30,12 +30,12 @@ useIntervalFn(nextBanner, 5000);
       <div
         :key="index"
         v-show="index === current"
-        class="w-full h-full max-h-100vh"
+        class="w-full h-full max-h-100vh overflow-hidden"
       >
         <NuxtImg
           :src="banner"
           alt="banner"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-center object-cover"
           width="2048"
           height="1152"
         />
