@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@egjs/vue3-flicking':
-        specifier: ^4.11.4
-        version: 4.11.4(vue@3.5.13(typescript@5.6.3))
       '@nuxt/fonts':
         specifier: ^0.10.2
         version: 0.10.2(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.4)(vite@5.4.11(@types/node@22.9.3)(terser@5.36.0))
@@ -207,38 +204,9 @@ packages:
   '@capsizecss/unpack@2.3.0':
     resolution: {integrity: sha512-qkf9IoFIVTOkkpr8oZtCNSmubyWFCuPU4EOWO6J/rFPP5Ks2b1k1EHDSQRLwfokh6nCd7mJgBT2lhcuDCE6w4w==}
 
-  '@cfcs/core@0.0.24':
-    resolution: {integrity: sha512-feB38qu+eDk0Pggh/yR7gjaNmvUYA2uCxHP3Pz2MLE4LZ/9jPdtu8bzCSI47yTEhWyZCF5Pk698hdz8IN2mTjA==}
-
-  '@cfcs/core@0.1.0':
-    resolution: {integrity: sha512-kvYX0RpL45XTHJ5sW7teNbKeAa7pK3nNqaJPoFfZDPTIBJOkTtRD3QhkBG+O3Hu69a8xeMoPvF6y/RtJ6JUOdA==}
-
   '@cloudflare/kv-asset-handler@0.3.4':
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
     engines: {node: '>=16.13'}
-
-  '@egjs/agent@2.4.4':
-    resolution: {integrity: sha512-cvAPSlUILhBBOakn2krdPnOGv5hAZq92f1YHxYcfu0p7uarix2C6Ia3AVizpS1SGRZGiEkIS5E+IVTLg1I2Iog==}
-
-  '@egjs/axes@3.9.1':
-    resolution: {integrity: sha512-vaqUe/boRDk/A4TjiPtMv+lf7c4Q2jTER/Hw4I61NiJUyPftlZjaP4cteBCQejFyZmzimmA2W0cLmYZHTjBY8A==}
-
-  '@egjs/component@3.0.5':
-    resolution: {integrity: sha512-cLcGizTrrUNA2EYE3MBmEDt2tQv1joVP1Q3oDisZ5nw0MZDx2kcgEXM+/kZpfa/PAkFvYVhRUZwytIQWoN3V/w==}
-
-  '@egjs/flicking@4.11.4':
-    resolution: {integrity: sha512-ZQxJS0C9lZ/PcMfM7vo9KQW4tvmi+e+9HIxRstRCo2DGy0nJ6LklZt0b+POf6O9Ak0qZwDeHCGp6AhrDu9EPNA==}
-
-  '@egjs/imready@1.4.1':
-    resolution: {integrity: sha512-JIOBs4lB7FYdsKi5uvz2j3SObX8eShtZjtqlOH41tm185aJOQZwiKBK8+V4MxzG4X6DqVhpdN8UcuVwBbElfsg==}
-
-  '@egjs/list-differ@1.0.1':
-    resolution: {integrity: sha512-OTFTDQcWS+1ZREOdCWuk5hCBgYO4OsD30lXcOCyVOAjXMhgL5rBRDnt/otb6Nz8CzU0L/igdcaQBDLWc4t9gvg==}
-
-  '@egjs/vue3-flicking@4.11.4':
-    resolution: {integrity: sha512-3CkbaiXHBKnsx0UKY6xKdF5lPbQrJ4LnJSDpoqbIarIMg0mIstC3QlaFGUDIYGCNnhGM1mIYKW4d1KaQdcL6mA==}
-    peerDependencies:
-      vue: ^3.0.0
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -4063,47 +4031,9 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@cfcs/core@0.0.24':
-    dependencies:
-      '@egjs/component': 3.0.5
-
-  '@cfcs/core@0.1.0':
-    dependencies:
-      '@egjs/component': 3.0.5
-
   '@cloudflare/kv-asset-handler@0.3.4':
     dependencies:
       mime: 3.0.0
-
-  '@egjs/agent@2.4.4': {}
-
-  '@egjs/axes@3.9.1':
-    dependencies:
-      '@cfcs/core': 0.1.0
-      '@egjs/agent': 2.4.4
-      '@egjs/component': 3.0.5
-
-  '@egjs/component@3.0.5': {}
-
-  '@egjs/flicking@4.11.4':
-    dependencies:
-      '@egjs/axes': 3.9.1
-      '@egjs/component': 3.0.5
-      '@egjs/imready': 1.4.1
-      '@egjs/list-differ': 1.0.1
-
-  '@egjs/imready@1.4.1':
-    dependencies:
-      '@cfcs/core': 0.0.24
-      '@egjs/component': 3.0.5
-
-  '@egjs/list-differ@1.0.1': {}
-
-  '@egjs/vue3-flicking@4.11.4(vue@3.5.13(typescript@5.6.3))':
-    dependencies:
-      '@egjs/component': 3.0.5
-      '@egjs/flicking': 4.11.4
-      vue: 3.5.13(typescript@5.6.3)
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true

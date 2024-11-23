@@ -8,25 +8,24 @@ const banners = [
   "/conhi.jpg",
 ];
 
-const state = reactive({ current: 0 });
+const current = ref(0);
 
 function nextBanner() {
-  state.current = (state.current + 1) % banners.length;
+  current.value = (current.value + 1) % banners.length;
 }
 
 function prevBanner() {
-  state.current = (state.current - 1 + banners.length) % banners.length;
+  current.value = (current.value - 1 + banners.length) % banners.length;
 }
 
 useIntervalFn(nextBanner, 5000);
 </script>
 
 <template>
-  <section id="home" class="mb-2rem -mx-2rem z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem">
-    <div v-for="(banner, index) in banners">
-      <div :key="index" class="w-full h-full max-h-100vh overflow-hidden" :class="{ hidden: index !== state.current }">
+  <section id="home" class="mb-2rem -mx-2rem relative z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem">
+    <div v-for="(banner, index) in banners" class="flex z-0">
+      <div :key="index" v-show="index === current" class="w-full h-full max-h-100vh overflow-hidden">
         <NuxtImg
-          preload
           :src="banner"
           alt="banner"
           class="w-full h-full object-center object-cover"
@@ -51,18 +50,3 @@ useIntervalFn(nextBanner, 5000);
     </div>
   </section>
 </template>
-
-<style scoped>
-section img {
-  animation: fadeIn 1s ease;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>

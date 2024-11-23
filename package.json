@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@egjs/vue3-flicking": "^4.11.4",
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.8.2",
     "@nuxt/image": "^1.8.1",
