@@ -23,7 +23,7 @@ useIntervalFn(nextBanner, 5000);
 
 <template>
   <section id="home" class="mb-2rem -mx-2rem relative z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem">
-    <div v-for="(banner, index) in banners" class="flex z-0">
+    <div v-for="(banner, index) in banners" class="flex z-0 relative">
       <div :key="index" v-show="index === current" class="w-full h-full max-h-100vh overflow-hidden">
         <NuxtImg
           :src="banner"
@@ -50,3 +50,18 @@ useIntervalFn(nextBanner, 5000);
     </div>
   </section>
 </template>
+
+<style scoped>
+img {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
