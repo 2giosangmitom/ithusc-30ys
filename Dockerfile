@@ -7,11 +7,12 @@ RUN npm install -g pnpm@latest
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install
 COPY . .
-RUN pnpm build
+RUN pnpm generate
 
 # Run the page
-FROM base as runner
+FROM caddy:2.9-alpine as runner
 WORKDIR /app
-COPY --from=builder /app/.output .
+COPY --from=builder /app/dist .
+COPY Caddyfile .
+CMD [ "caddy", "run" ]
 EXPOSE 3000
-CMD [ "node", "server/index.mjs" ]
