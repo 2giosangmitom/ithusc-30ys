@@ -24,20 +24,20 @@ useIntervalFn(nextBanner, 5000);
 <template>
   <section
     id="home"
-    class="mb-2rem -mx-2rem overflow-hidden relative z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem"
+    class="mb-2rem -mx-2rem relative z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem"
   >
     <div v-for="(banner, index) in banners" class="flex z-0">
       <div
         :key="index"
         v-show="index === current"
-        class="w-full h-full max-h-100vh overflow-hidden"
+        class="w-full h-full max-h-100vh"
       >
         <NuxtImg
           :src="banner"
           alt="banner"
           class="w-full h-full object-cover"
-          width="2048"
-          height="1152"
+          width="2048px"
+          height="1152px"
         />
       </div>
     </div>
@@ -46,13 +46,13 @@ useIntervalFn(nextBanner, 5000);
     >
       <button
         @click="prevBanner"
-        class="text-3rem text-white p-0.2rem hover:-translate-x-10px transition flex items-center justify-center ml-1rem z-0"
+        class="text-3rem text-white p-0.2rem hover:-translate-x-10px transition flex items-center justify-center ml-1rem lg:ml-2rem z-0"
       >
         <Icon name="iconamoon:arrow-left-2" />
       </button>
       <button
         @click="nextBanner"
-        class="text-3rem text-white p-0.2rem hover:translate-x-10px transition flex items-center justify-center mr-1rem z-0"
+        class="text-3rem text-white p-0.2rem hover:translate-x-10px transition flex items-center justify-center mr-1rem lg:ml-2rem z-0"
       >
         <Icon name="iconamoon:arrow-right-2" />
       </button>
