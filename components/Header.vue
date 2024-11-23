@@ -13,11 +13,7 @@ const parts = [
     class="bg-accent h-80px flex items-center justify-between px-2rem shadow-md sm:px-3rem md:px-4rem lg:px-7rem xl:px-10rem"
   >
     <div>
-      <NuxtImg
-        src="/logo_with_white_text.png"
-        alt="it husc logo"
-        width="280px"
-      />
+      <NuxtImg src="/logo_with_white_text.png" alt="it husc logo" width="280px" />
     </div>
 
     <!-- Mobile navigation -->

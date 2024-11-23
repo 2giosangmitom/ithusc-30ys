@@ -2,8 +2,7 @@
 const history = [
   {
     date: "13/12/1994",
-    content:
-      "Bộ Giáo Dục và Đào Tạo ra quyết định thành lập Khoa Công nghệ thông tin tại Đại học Huế",
+    content: "Bộ Giáo Dục và Đào Tạo ra quyết định thành lập Khoa Công nghệ thông tin tại Đại học Huế",
   },
   {
     date: "01/06/1995",
@@ -12,13 +11,11 @@ const history = [
   },
   {
     date: "2000",
-    content:
-      "Đào tạo thạc sĩ chuyên ngành Khoa học máy tính được đưa vào hoạt động",
+    content: "Đào tạo thạc sĩ chuyên ngành Khoa học máy tính được đưa vào hoạt động",
   },
   {
     date: "2010",
-    content:
-      "Khoa Công nghệ thông tin được giao trọng trách đào tạo tiến sĩ chuyên ngành Khoa học máy tính",
+    content: "Khoa Công nghệ thông tin được giao trọng trách đào tạo tiến sĩ chuyên ngành Khoa học máy tính",
   },
   {
     date: "2018",
@@ -34,11 +31,7 @@ const history = [
 <template>
   <section id="history" class="mt-1rem">
     <div class="flex flex-col">
-      <div
-        v-for="(item, index) in history"
-        :key="item.date"
-        class="flex my-12px"
-      >
+      <div v-for="(item, index) in history" :key="item.date" class="flex my-12px">
         <span
           class="font-bold relative pb-32px before:content-empty before:absolute before:h-13px before:w-13px before:border-radius-50% before:border before:border-black before:right-32px before:top-3px flex-[0_0_150px]"
           :class="{

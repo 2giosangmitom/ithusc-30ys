@@ -1,9 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title:
-    "Chào mừng 30 năm thành lập khoa Công nghệ thông tin - Đại học Khoa Học Huế",
-  description:
-    "Chào mừng 30 năm thành lập khoa Công nghệ thông tin - Đại học Khoa Học Huế",
+  title: "Chào mừng 30 năm thành lập khoa Công nghệ thông tin - Đại học Khoa Học Huế",
+  description: "Chào mừng 30 năm thành lập khoa Công nghệ thông tin - Đại học Khoa Học Huế",
 });
 </script>
 

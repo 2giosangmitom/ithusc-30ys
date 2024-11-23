@@ -63,9 +63,7 @@ useEventListener(searchBox, "keydown", (e) => {
       details.value = fullDetails;
     } else {
       details.value = fullDetails.filter((item) => {
-        return item.title
-          .toLowerCase()
-          .includes(searchBox.value?.value.toLowerCase() || "");
+        return item.title.toLowerCase().includes(searchBox.value?.value.toLowerCase() || "");
       });
     }
   }
@@ -86,14 +84,9 @@ useEventListener(searchBox, "keydown", (e) => {
 
     <div>
       <div class="my-2rem flex flex-col lg:w-800px lg:mx-auto">
-        <div
-          class="flex justify-between items-center mb-10px text-0.9rem uppercase mb-5px"
-        >
+        <div class="flex justify-between items-center mb-10px text-0.9rem uppercase mb-5px">
           <label for="search_box">Tìm kiếm từ khóa</label>
-          <label for="search_box">
-            Đang hiển thị {{ details.length }} / {{ fullDetails.length }} hoạt
-            động
-          </label>
+          <label for="search_box"> Đang hiển thị {{ details.length }} / {{ fullDetails.length }} hoạt động </label>
         </div>
 
         <input
@@ -114,9 +107,7 @@ useEventListener(searchBox, "keydown", (e) => {
             'border-b-2px border-#26335d': index != details.length - 1,
           }"
         >
-          <div
-            class="lg:border-r lg:border-#b7b7b7 lg:w-60% lg:mr-20px lg:pr-20px"
-          >
+          <div class="lg:border-r lg:border-#b7b7b7 lg:w-60% lg:mr-20px lg:pr-20px">
             <strong class="text-#26335d text-1.25rem lg:text-2rem">
               {{ detail.title }}
             </strong>
@@ -126,10 +117,7 @@ useEventListener(searchBox, "keydown", (e) => {
               <p class="min-w-150px font-bold">Ngày</p>
               <p>{{ detail.date }}</p>
             </div>
-            <div
-              v-if="detail.time"
-              class="flex py-10px border-b border-#b7b7b7"
-            >
+            <div v-if="detail.time" class="flex py-10px border-b border-#b7b7b7">
               <p class="min-w-150px font-bold">Thời gian</p>
               <p>{{ detail.time }}</p>
             </div>

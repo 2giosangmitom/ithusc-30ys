@@ -8,38 +8,23 @@
     <div class="relative text-white mb-2rem">
       <h4 class="uppercase">Liên hệ với chúng tôi</h4>
       <div>
-        <p>
-          <span class="inline-block mr-10px">Địa chỉ:</span> 77 Nguyễn Huệ,
-          Thành Phố Huế
-        </p>
+        <p><span class="inline-block mr-10px">Địa chỉ:</span> 77 Nguyễn Huệ, Thành Phố Huế</p>
         <p>
           <span class="inline-block mr-10px">Số điện thoại:</span>
-          <a href="tel:(84) (234) 3826767" class="underline"
-            >(84) (234) 3826767</a
-          >
+          <a href="tel:(84) (234) 3826767" class="underline">(84) (234) 3826767</a>
         </p>
         <p>
           <span class="inline-block mr-10px">Email:</span>
-          <a href="mailto:khcndhkh@hueuni.edu.vn" class="underline"
-            >khcndhkh@hueuni.edu.vn</a
-          >
+          <a href="mailto:khcndhkh@hueuni.edu.vn" class="underline">khcndhkh@hueuni.edu.vn</a>
         </p>
       </div>
     </div>
     <div class="relative text-white flex flex-col">
       <h4 class="uppercase">Kết nối với chúng tôi</h4>
-      <a
-        href="https://husc.edu.vn/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="underline"
+      <a href="https://husc.edu.vn/" target="_blank" rel="noopener noreferrer" class="underline"
         >Trường Đại học Khoa học</a
       >
-      <a
-        href="https://it.husc.edu.vn/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="underline"
+      <a href="https://it.husc.edu.vn/" target="_blank" rel="noopener noreferrer" class="underline"
         >Khoa Công nghệ thông tin</a
       >
     </div>
