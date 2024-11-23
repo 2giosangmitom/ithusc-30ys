@@ -22,16 +22,10 @@ useIntervalFn(nextBanner, 5000);
 </script>
 
 <template>
-  <section id="home" class="mb-2rem -mx-2rem relative z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem">
-    <div v-for="(banner, index) in banners" class="flex z-0 relative">
+  <section id="home" class="mb-2rem relative -mx-2rem z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem">
+    <div v-for="(banner, index) in banners" class="flex z-0">
       <div :key="index" v-show="index === current" class="w-full h-full max-h-100vh overflow-hidden">
-        <NuxtImg
-          :src="banner"
-          alt="banner"
-          class="w-full h-full object-center object-cover"
-          width="2048"
-          height="1000"
-        />
+        <NuxtImg :src="banner" alt="banner" class="w-full" />
       </div>
     </div>
     <div class="flex justify-between absolute top-1/2 transform -translate-y-1/2 w-full z-0">
