@@ -31,13 +31,13 @@ const parts = [
 
       <div
         @click="isOpen = false"
-        class="fixed top-0 left-0 w-full h-full bg-black/50 z-0 transition-opacity duration-300"
+        class="fixed top-0 left-0 w-full h-full bg-black/50 z-10 transition-opacity duration-300"
         :class="{ 'opacity-0': !isOpen }"
         :style="{ visibility: isOpen ? 'visible' : 'hidden' }"
       ></div>
 
       <ul
-        class="fixed top-0 right-0 h-100vh w-80% bg-#091057 shadow-2xl flex flex-col items-center text-center p-20px text-1.25rem text-white font-600 gap-20px z-5 transition-all-300 transform-translate-x-0"
+        class="fixed top-0 right-0 h-100vh w-80% bg-#091057 shadow-2xl flex flex-col items-center text-center p-20px text-1.25rem text-white font-600 gap-20px z-15 transition-all-300 transform-translate-x-0"
         :class="{ 'transform-translate-x-100%': !isOpen }"
       >
         <button
