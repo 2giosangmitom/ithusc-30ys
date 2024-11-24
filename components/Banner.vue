@@ -25,7 +25,7 @@ useIntervalFn(nextBanner, 5000);
   <section id="home" class="mb-2rem relative -mx-2rem z-0 sm:-mx-3rem md:-mx-4rem lg:-mx-7rem xl:-mx-10rem">
     <div v-for="(banner, index) in banners" class="flex z-0">
       <div :key="index" v-show="index === current" class="w-full h-full max-h-100vh overflow-hidden">
-        <NuxtImg :src="banner" alt="banner" class="w-full" />
+        <NuxtImg :src="banner" alt="banner" class="w-full" preload />
       </div>
     </div>
     <div class="flex justify-between absolute top-1/2 transform -translate-y-1/2 w-full z-0">
